@@ -1,0 +1,157 @@
+body {
+    background-color: #f7dff4;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: left;
+    padding: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px #00000080;
+}
+
+.inline {
+    padding: 2px;
+    margin: 2px;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    align-items: stretch;
+}
+
+.flex-box.inline {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 0px;
+    margin: 5px;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+.flex-box.container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-item {
+    background-clip: padding-box;
+}
+
+.flex-item.container {
+    margin: 10px;
+    flex: 0 1 50%;
+}
+
+.flex-item.inline {
+    margin: 5px;
+    padding: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.flex-item.inline.badge {
+    margin: 2px;
+    padding: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.flex-box.inline.container {
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
+}
+
+@media (max-width: 700px) {
+    .flex-box {
+        flex-direction: column;
+    }
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: 'jetbrains mono', monospace;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-family: 'jetbrains mono', monospace;
+}
+
+h3 {
+    color: black;
+    text-align: left;
+    font-family: 'jetbrains mono', monospace;
+    margin: 16px
+}
+
+p {
+    margin: 16px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: #f7dff4;
+}
+
+a:active {
+    text-decoration: none;
+    scale: 90%;
+}
+
+.palette-prog {
+    color: black;
+    text-align: left;
+    font-family: 'jetbrains mono', monospace;
+    margin: 16px;
+    background-color: #5248c7;
+}
+
+.palette-magic {
+    color: black;
+    text-align: left;
+    font-family: 'jetbrains mono', monospace;
+    margin: 16px;
+    background-color: #c7486c;
+}
+
+.palette-blended {
+    color: black;
+    text-align: left;
+    font-family: 'jetbrains mono', monospace;
+    margin: 16px;
+    background-color: #8b48c7;
+}
+
+.palette-background {
+    color: black;
+    text-align: left;
+    font-family: 'jetbrains mono', monospace;
+    margin: 16px;
+    background-color: #f7dff4;
+}
